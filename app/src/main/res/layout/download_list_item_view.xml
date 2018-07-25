@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+    <Button
+        android:id="@+id/down_load_item_tv_start"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="Start"/>
+
+    <TextView
+        android:id="@+id/down_load_item_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/down_load_item_tv_start"
+        android:textSize="18dp"/>
+
+    <ProgressBar
+        android:id="@+id/down_load_item_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/down_load_item_tv_name"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/down_load_item_tv_start"
+        android:progress="100"/>
+
+    <TextView
+        android:id="@+id/down_load_item_tv_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/down_load_item_progress_bar"
+        android:layout_toLeftOf="@id/down_load_item_tv_start"
+        android:text="18"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
